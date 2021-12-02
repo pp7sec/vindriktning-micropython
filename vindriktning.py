@@ -1,8 +1,8 @@
 import machine, time
 
 class vindriktning:
-    def __init__(self, tx, rx):
-        self.uart = machine.UART(2, 9600, tx=tx, rx=rx)
+    def __init__(self, rx):
+        self.uart = machine.UART(2, 9600, rx=rx)
         self.uart.init(9600, bits=8, parity=None, stop=1)
         self.pm2point5 = 0
         self.pm1 = 0
