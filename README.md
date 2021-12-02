@@ -5,7 +5,7 @@
 import time
 from vindriktning import vindriktning
 
-vdt = vindriktning(tx=17, rx=16)
+vdt = vindriktning(rx=16)
 
 while True:
     time.sleep(1)
